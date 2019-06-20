@@ -1,0 +1,9 @@
+<div>
+    <div class="panel-heading">
+        <h4 class="panel-title">{{formatDate({dt:weather.dt})|date:formatOfDate}}</h4>
+    </div>
+    <div class="alert alert-dark">
+        Nhiệt độ: {{weather.temp.day}}<sup>o</sup>C</br>
+        Thời tiết: {{weather.weather[0].description}}
+    </div>
+</div>

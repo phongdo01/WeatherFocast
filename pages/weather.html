@@ -1,0 +1,15 @@
+Thành phố {{city}}
+</br>
+</br>
+Days:<a href="#/weather/3" ng-class="{'my-class':num==='3'}">3</a>|
+<a href="#/weather/4" ng-class="{'my-class':num==='4'}">4</a>|
+<a href="#/weather/5" ng-class="{'my-class':num==='5'}">5</a>
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-defaul">
+                <weather-directive weather='w' format-date='formatDate(dt)' format-of-date='MMM d y'></weather-directive>
+            </div>
+        </div>
+    </div>
+</div>
